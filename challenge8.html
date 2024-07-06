@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 50%;
+            position: relative;
+        }
+        #img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            .text {
+                color: white;
+                position: absolute;
+                font-family: sans-serif;
+                font-size: 20px;
+                top: 45%;
+                right: 40%;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="img" src="https://www.carsession.com/wp-content/uploads/2017/10/Ferrari-FXX-K-Evo-will-be-unveiled-this-weekend.jpg" alt="Ferrari Ferrari FXX K Evo will be unveiled this weekend">
+        <div class="overlay">
+            <div class="text">
+                <p>Ferrari FKK Evo</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
